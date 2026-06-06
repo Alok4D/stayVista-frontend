@@ -7,7 +7,7 @@ const HostRoute = ({ children }) => {
 
     const [role, isLoading] = useRole()
     if(isLoading) return <LoadingSpinner></LoadingSpinner>
-    if(role === 'host') return children
+    if(role === 'host' || role === 'admin') return children
     return <Navigate to='/dashboard'></Navigate>
 }
 

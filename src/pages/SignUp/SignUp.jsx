@@ -57,9 +57,18 @@ const SignUp = () => {
   return (
     <div className='flex justify-center items-center min-h-screen'>
       <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
-        <div className='mb-8 text-center'>
-          <h1 className='my-3 text-4xl font-bold'>Sign Up</h1>
-          <p className='text-sm text-gray-400'>Welcome to StayVista</p>
+        <div className='mb-8 '>
+         <div className='flex justify-center'>
+               {/* Logo */}
+        <Link to="/">
+          <img
+            src="https://i.ibb.co/4ZXzmq5/logo.png"
+            alt="logo"
+            className="w-24 md:w-28"
+          />
+        </Link>
+         </div>
+          <p className='text-sm text-gray-400 text-center pt-3'>Welcome to StayVista</p>
         </div>
         <form onSubmit={handleSubmit}
          
