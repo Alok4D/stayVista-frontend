@@ -3,6 +3,7 @@ import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import toast from "react-hot-toast";
 import { IoCloseCircle } from "react-icons/io5";
+import EmptyState from "../Shared/EmptyState";
 
 const Wishlist = () => {
   const { user } = useAuth();
@@ -55,9 +56,11 @@ const Wishlist = () => {
 
   if (wishlist.length === 0) {
     return (
-      <p className="text-center mt-10 text-gray-500">
-        No items in wishlist yet 💔
-      </p>
+      <EmptyState
+        message="No items in wishlist yet 💔"
+        address="/"
+        label="Browse Rooms"
+      />
     );
   }
 
