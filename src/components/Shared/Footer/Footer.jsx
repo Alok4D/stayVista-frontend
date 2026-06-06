@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#f7f7f7] shadow-sm">
-      <Container>
+      <div className="container mx-auto">
         {/* Top Section */}
         <div className="pt-12 pb-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
 
@@ -78,7 +78,7 @@ const Footer = () => {
             <a className="text-lg p-2 rounded-full hover:text-white hover:bg-blue-500 dark:text-gray-400 transition"><BsLinkedin /></a>
           </div>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };
