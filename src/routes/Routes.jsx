@@ -23,6 +23,7 @@ import ContactUs from "../pages/Contact/ContactUs";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import AllRooms from "../components/AllRooms/AllRooms";
 import BlogDetails from "../components/Home/BlogDetails";
+import ContactMessages from "../pages/Dashboard/Admin/ContactMessages";
 
 export const router = createBrowserRouter([
   {
@@ -114,6 +115,16 @@ export const router = createBrowserRouter([
           <PrivateRoute>
             <AdminRoute>
               <ManageUsers></ManageUsers>
+            </AdminRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "contact-messages",
+        element: (
+          <PrivateRoute>
+            <AdminRoute>
+              <ContactMessages />
             </AdminRoute>
           </PrivateRoute>
         ),
